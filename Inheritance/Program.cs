@@ -7,33 +7,50 @@ namespace Inheritance
         static void Main(string[] args)
         {
             // TODO Be sure to follow best practice when creating your classes
+            
+            // This will be the object of the bird class
+            var myBird = new Bird();
+            
+                myBird.AnimalName = "Red tail Hawk";
+                myBird.Age = 3;
+                myBird.Color = "Brown and red";
+                myBird.IsWild = true;
+                myBird.CanFly = true;
+                myBird.BeakType = "Hooked";
+                myBird.WingSpan = 4.6;
+                myBird.FavoriteFood = "Small mammals";
+                
+                Console.WriteLine("Animal info");
+                myBird.AnimalInfo();
+                
+                Console.WriteLine("Bird Details");
+                myBird.BirdInfo();
+               
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+
+                {
+                    var myReptile = new Reptile();
+
+                   myReptile.AnimalName = ("Komodo Dragon");
+                   myReptile.Age = 26;
+                   myReptile.Color = "Black";
+                   myReptile.IsWild = true;
+                   myReptile.HasScales = true;
+                   myReptile.ScaleColor = "Yellow-grey";
+                   myReptile.IsVenomous = true;
+                   myReptile.Habitat = "dry open grassland, savanna and tropical forest at low elevations";
+                   
+                   Console.WriteLine("Animal info");
+                   myReptile.AnimalInfo();
+                   
+                   Console.WriteLine("Reptile Details");
+                   myReptile.ReptileInfo();
+                   
+
+                }
 
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+               
         }
     }
 }
