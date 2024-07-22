@@ -11,7 +11,7 @@ namespace Inheritance
             // This will be the object of the bird class
             var myBird = new Bird();
             
-                myBird.AnimalName = "Red tail Hawk";
+                myBird.AnimalName = "Red Tail Hawk";
                 myBird.Age = 3;
                 myBird.Color = "Brown and red";
                 myBird.IsWild = true;
@@ -25,32 +25,25 @@ namespace Inheritance
                 
                 Console.WriteLine("Bird Details");
                 myBird.BirdInfo();
-               
 
+                
+                var myReptile = new Reptile();
 
-                {
-                    var myReptile = new Reptile();
-
-                   myReptile.AnimalName = ("Komodo Dragon");
-                   myReptile.Age = 26;
-                   myReptile.Color = "Black";
-                   myReptile.IsWild = true;
-                   myReptile.HasScales = true;
-                   myReptile.ScaleColor = "Yellow-grey";
-                   myReptile.IsVenomous = true;
-                   myReptile.Habitat = "dry open grassland, savanna and tropical forest at low elevations";
+                myReptile.AnimalName = ("Komodo Dragon");
+                myReptile.Age = 26;
+                myReptile.Color = "Black";
+                myReptile.IsWild = true;
+                myReptile.HasScales = true;
+                myReptile.ScaleColor = "Yellow-grey";
+                myReptile.IsVenomous = true;
+                myReptile.Habitat = "dry open grassland, savanna and tropical forest at low elevations";
                    
-                   Console.WriteLine("Animal info");
-                   myReptile.AnimalInfo();
+                Console.WriteLine("Animal info");
+                myReptile.AnimalInfo();
                    
-                   Console.WriteLine("Reptile Details");
-                   myReptile.ReptileInfo();
-                   
-
-                }
-
-
-               
+                Console.WriteLine("Reptile Details");
+                myReptile.ReptileInfo();
+                
         }
     }
 }
